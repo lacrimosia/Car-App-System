@@ -4,4 +4,9 @@ import {Injectable} from 'angular2/core';
 export class routeService{
 	candle = [];
 
+
+	goTo(module){
+		
+	}
+
 }
