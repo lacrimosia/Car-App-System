@@ -1,31 +1,29 @@
 import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES, RouterLink, RouterOutlet} from 'angular2/router';
-import {apps} from './apps.component';
+import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
+import {appsComponent} from './apps.component';
+import {HomeComponent} from './Home.Component';
 
 // Root level app
 
 @Component({
     selector: 'my-app',
-    directives: [RouterOutlet, RouterLink, ROUTER_DIRECTIVES],
+    directives: [ROUTER_DIRECTIVES],
     template: `
     	<ul>
-			<li><a href="#">Home</a></li>
-			<li><a [router-link]="['/apps']">Apps</a></li>
+			<li><a [routerLink]="['/Home']">Home</a></li>
+			<li><a [routerLink]="['/Apps']">Apps</a></li>
 			<li><a href="#">GPS</a></li>
 			<li><a href="#">Settings</a></li>
 		</ul>
+ <router-outlet></router-outlet>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<router-outlet></router-outlet>
-				</div>
-			</div>
-		</div>
     `
 })
 
 @RouteConfig([
-		{ path: '/apps', as: 'apps', component: apps}
+		{ path: '/', component: HomeComponent, as: 'Home' },
+		{ path: '/apps', component: appsComponent, as: 'Apps'}
 ])
-export class AppComponent { }
+export class AppComponent {
+
+ }

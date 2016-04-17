@@ -2,10 +2,9 @@ import {Component} from 'angular2/core';
 import {Router} from 'angular2/router';
 
 @Component({
-	selector: 'apps-menu',
-	template: '<h1>I am the apps</h1>'
+	selector: 'home-page',
+	template: '<p>This is the home page</p>'
 })
-
-export class appsComponent{
+export class HomeComponent{
 	
 }
