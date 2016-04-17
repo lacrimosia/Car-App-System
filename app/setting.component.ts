@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 
 @Component({
 	selector: 'settings',
-	template: ``
+	template: `This is settings`
 })
 
 export class settings{

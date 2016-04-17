@@ -1,8 +1,12 @@
 <html>
   <head>
-    <title>Angular 2 QuickStart</title>
+    <title>Binar Technologies | Leaders in Innovation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link rel="stylesheet" href="styles.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
@@ -12,6 +16,7 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
     <!-- 2. Configure SystemJS -->
     <script>
       System.config({
@@ -26,8 +31,13 @@
             .then(null, console.error.bind(console));
     </script>
   </head>
+  <base href="/">
   <!-- 3. Display the application -->
   <body>
-    <my-app>Loading...</my-app>
+    <div class="container">
+      <div class="row">
+        <my-app>Loading...</my-app>
+      </div>
+    </div>
   </body>
 </html>
