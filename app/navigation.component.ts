@@ -16,7 +16,7 @@ import {routeService} from './routeService';
 		<button (click)="getCandle(candles)">Add Candle</button>
 
 		<p *ngFor="#c of routeService.candle">{{ c }}</p>
-		<h2>more testing</h2>
+		<h2>more testing 2</h2>
 	`
 })
  export class mainNav{
