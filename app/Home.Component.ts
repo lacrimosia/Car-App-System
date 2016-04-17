@@ -3,7 +3,10 @@ import {Router} from 'angular2/router';
 
 @Component({
 	selector: 'home-page',
-	template: '<p>This is the home page</p>'
+	template: `<h1>Home Page</h1>
+	<img src="assets/images/candy.jpg">
+
+	`
 })
 export class HomeComponent{
 	
