@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
+import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS,LocationStrategy, HashLocationStrategy} from 'angular2/router';
 import {appsComponent} from './apps.component';
 import {HomeComponent} from './Home.Component';
 import {GPSComponent} from './GPS.component';
@@ -25,14 +25,15 @@ import {SettingsComponent} from './Settings.component';
  </div>
  <router-outlet></router-outlet>
 
-    `
+    `,
+    providers: [ROUTER_PROVIDERS]
 })
 
 @RouteConfig([
 		{ path: '/', component: HomeComponent, as: 'Home' },
 		{ path: '/apps', component: appsComponent, as: 'Apps'},
 		{ path: '/gps', component: GPSComponent, as: 'GPS' },
-		{ path: '/settings/...', component: SettingsComponent, as: 'Settings' }
+		{ path: '/settings', component: SettingsComponent, as: 'Settings' }
 ])
 export class AppComponent {
 
