@@ -5,7 +5,15 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS, LocationStrategy, Hash
 
 @Component({
 	selector: 'settings',
-	template: `<h1>Settings Page</h1>
+	template: `
+	  <div class="container">
+	  	<div class="row">
+	  		<div class="col-md-12">
+	  			<h1>Settings Page</h1>
+	  		</div>
+	  	</div>
+	  </div>
+		
 	`
 })
 export class SettingsComponent {

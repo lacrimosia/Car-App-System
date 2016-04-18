@@ -3,8 +3,16 @@ import {Router} from 'angular2/router';
 
 @Component({
 	selector: 'home-page',
-	template: `<h1>Home Page</h1>
-	<img src="assets/images/candy.jpg">
+	template: `
+
+	<div class="container">
+	  	<div class="row">
+	  		<div class="col-md-12">
+	  			<h1>Home Page</h1>
+				<img src="assets/images/candy.jpg">
+	  		</div>
+	  	</div>
+	  </div>
 
 	`
 })
